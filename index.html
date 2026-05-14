@@ -42,7 +42,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 
   <!-- Structured data for SEO -->
   <script type="application/ld+json">
@@ -71,7 +71,13 @@
 
     <!-- ============ HEADER ============ -->
     <header class="header">
-      <img class="logo-mark" src="logo.png" width="92" height="86" alt="AlysisAI logo" />
+      <a class="logo-link"
+         href="https://alysisai.com/"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Open alysisai.com">
+        <img class="logo-mark" src="logo.png" width="92" height="86" alt="AlysisAI logo" />
+      </a>
       <h1 class="brand">AlysisAI</h1>
       <p class="subtitle">AI, technology and digital presence</p>
     </header>
@@ -238,6 +244,6 @@
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" defer></script>
-  <script src="script.js" defer></script>
+  <script src="script.js?v=2" defer></script>
 </body>
 </html>

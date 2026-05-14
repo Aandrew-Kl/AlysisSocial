@@ -81,15 +81,35 @@ body {
   padding-top: 8px;
 }
 
-.logo-mark {
+.logo-link {
   display: block;
+  margin: 0 auto 22px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform var(--t) var(--ease);
+}
+
+@media (hover: hover) {
+  .logo-link:hover { transform: translateY(-2px); }
+}
+
+.logo-link:active { transform: translateY(0) scale(0.99); transition-duration: var(--t-fast); }
+
+.logo-mark {
+  display: inline-block;
   width: 92px;
   height: auto;
-  margin: 0 auto 22px;
   /* Subtle glow so the white silhouette has separation from the dark bg */
   filter: drop-shadow(0 10px 32px rgba(255, 255, 255, 0.08));
   user-select: none;
   -webkit-user-drag: none;
+  transition: filter var(--t) var(--ease);
+}
+
+@media (hover: hover) {
+  .logo-link:hover .logo-mark {
+    filter: drop-shadow(0 14px 40px rgba(255, 255, 255, 0.18));
+  }
 }
 
 .brand {
