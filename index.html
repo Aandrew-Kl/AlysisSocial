@@ -33,9 +33,10 @@
 
   <link rel="canonical" href="https://alysisai.com/" />
 
-  <!-- Inline SVG favicon: gradient squircle with the "A" letter -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%237c5cff'/><stop offset='1' stop-color='%2300d4ff'/></linearGradient></defs><rect width='64' height='64' rx='16' fill='url(%23g)'/><text x='50%25' y='54%25' font-family='Inter,Arial,sans-serif' font-size='38' font-weight='800' text-anchor='middle' dominant-baseline='middle' fill='white'>A</text></svg>" />
-  <link rel="apple-touch-icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%237c5cff'/><stop offset='1' stop-color='%2300d4ff'/></linearGradient></defs><rect width='64' height='64' rx='16' fill='url(%23g)'/><text x='50%25' y='54%25' font-family='Inter,Arial,sans-serif' font-size='38' font-weight='800' text-anchor='middle' dominant-baseline='middle' fill='white'>A</text></svg>" />
+  <!-- Favicon — dark "A-chain" logo for light tabs, white version for dark tabs -->
+  <link rel="icon" type="image/png" href="logo-dark.png" media="(prefers-color-scheme: light)" />
+  <link rel="icon" type="image/png" href="logo.png"      media="(prefers-color-scheme: dark)" />
+  <link rel="apple-touch-icon" href="logo-dark.png" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -70,9 +71,7 @@
 
     <!-- ============ HEADER ============ -->
     <header class="header">
-      <div class="logo-mark" aria-hidden="true">
-        <span>A</span>
-      </div>
+      <img class="logo-mark" src="logo.png" width="92" height="86" alt="AlysisAI logo" />
       <h1 class="brand">AlysisAI</h1>
       <p class="subtitle">AI, technology and digital presence</p>
     </header>
